@@ -1,0 +1,26 @@
+form{
+    position: absolute;
+    margin: auto 0;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 750px;
+}
+
+
+.pagewrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+    height: 100vh;
+}
+
+.error{
+    color: red;
+}
