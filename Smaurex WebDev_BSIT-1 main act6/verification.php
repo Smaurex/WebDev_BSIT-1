@@ -3,14 +3,14 @@
 
 $name = $_POST["name"];
 $password = $_POST["password"];
-$status = $_POST["status"];
+$role = $_POST["role"];
 
 $errorMessage.="name=".$name."&";
 
 $accounts = array (
-    array("John",  123, "admin"),
-    array("Doe", 456, "cashier"),
-    array("Mauris", 790, "client")
+    array("John",  "123", "admin"),
+    array("Doe", "456", "cashier"),
+    array("Mauris", "790", "client")
   );
 
   if (!empty($name) && !empty($password)) {
@@ -19,17 +19,17 @@ $accounts = array (
 
     // Loop through accounts
     foreach ($accounts as $account) {
-        if ($name == $account[0] && $password == $account[1] && $status == $account[2]) {
+        if ($name == $account[0] && $password == $account[1] && $role == $account[2]) {
             $found = true;
 
             // Redirect based on status
-            if ($status == "admin") {
+            if ($role == "admin") {
                 header("location: welcomeAdmin.html");
                 exit();
-            } elseif ($status == "cashier") {
+            } elseif ($role == "cashier") {
                 header("location: welcomeCashier.html");
                 exit();
-            } elseif ($status == "client") {
+            } elseif ($role == "client") {
                 header("location: welcomeClient.html");
                 exit();
             }

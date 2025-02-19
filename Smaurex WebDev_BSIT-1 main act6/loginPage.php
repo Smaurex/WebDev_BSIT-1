@@ -26,13 +26,13 @@
                         <input id="password" type="password" name="password" placeholder="Password...">
                         <br><br>
                         <fieldset>
-                            <legend>Status</legend>
+                            <legend>Role</legend>
                             <label for="admin">Admin</label>
-                            <input id="admin "type="radio" name="status" value="admin">
+                            <input id="admin "type="radio" name="role" value="admin">
                             <label for="cashier">Cashier</label>
-                            <input id="cashier "type="radio" name="status" value="cashier">
+                            <input id="cashier "type="radio" name="role" value="cashier">
                             <label for="client">Client</label>
-                            <input id="client" type="radio" name="status" value="client">
+                            <input id="client" type="radio" name="role" value="client">
                         </fieldset>
                         <br>
                         <button type="submit">submit</button>
